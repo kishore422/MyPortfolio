@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sai Kishore Bhadragiri - Portfolio</title>
+
+    <!-- swiper css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+    <!-- box icons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- header design -->
+    <header class="header">
+        <a href="#" class="logo">Sai Kishore Bhadragiri</a>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Skills</a>
+            <a href="#portfolio">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <div class="bx bx-moon" id="darkMode-icon"></div>
+
+        <div class="bx bx-menu" id="menu-icon"></div>
+    </header>
+
+    <!-- home section design -->
+    <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello, I am</h3>
+            <h1>Sai Kishore Bhadragiri</h1>
+            <p>
+                A Full Stack Developer and DevOps Engineer with a passion for building scalable and efficient solutions. Skilled in Java, Python, .NET, AWS, and Azure.
+            </p>
+            <p>Currently enhancing my expertise at the University of Houston, with hands-on experience in cloud migrations, data engineering, and automation.</p>
+
+            <div class="social-media">
+                <a href="https://www.linkedin.com/in/saikishore422/" target="_blank"><i class='bx bxl-linkedin'></i></a>
+                <a href="https://github.com/kishore422" target="_blank"><i class='bx bxl-github'></i></a>
+            </div>
+
+            <a href="#" class="btn">Download CV</a>
+        </div>
+
+        <div class="profession-container">
+            <div class="profession-box">
+                <div class="profession" style="--i:0;">
+                    <i class='bx bx-code-alt'></i>
+                    <h3>Full Stack Developer</h3>
+                </div>
+                <div class="profession" style="--i:1;">
+                    <i class='bx bx-server'></i>
+                    <h3>DevOps Engineer</h3>
+                </div>
+                <div class="profession" style="--i:2;">
+                    <i class='bx bx-data'></i>
+                    <h3>Data Engineer</h3>
+                </div>
+                <div class="circle"></div>
+            </div>
+
+            <div class="overlay"></div>
+        </div>
+
+        <div class="home-img">
+            <img src="images/home.png" alt="">
+        </div>
+    </section>
+
+    <!-- about section design -->
+    <section class="about" id="about">
+        <div class="about-img">
+            <img src="images/about.png" alt="">
+        </div>
+
+        <div class="about-content">
+            <h2 class="heading">About <span>Me</span></h2>
+            <h3>
+                Hi there, welcome to my portfolio! I'm Sai Kishore,
+                an experienced software engineer with a focus on full-stack development and DevOps.
+            </h3>
+            <p>
+                With around 5 years of experience in cloud platforms, data management, and full-stack applications, I specialize in building scalable, responsive systems. I’m passionate about leveraging technology to drive efficiency and innovation in my work.
+            </p>
+            <a href="#" class="btn">Read More</a>
+        </div>
+    </section>
+
+    <!-- skills section (renamed from services) -->
+    <section class="services" id="services">
+        <h2 class="heading">Technical <span>Skills</span></h2>
+
+        <div class="services-container">
+            <div class="services-box">
+                <i class='bx bx-code-alt'></i>
+                <h3>Programming Languages</h3>
+                <p>.NET, Java, Python, JavaScript, TypeScript, SQL, C</p>
+            </div>
+            <div class="services-box">
+                <i class='bx bx-cloud'></i>
+                <h3>Cloud & DevOps</h3>
+                <p>AWS, Azure, Docker, Kubernetes, Jenkins, CI/CD Pipelines</p>
+            </div>
+            <div class="services-box">
+                <i class='bx bx-analyse'></i>
+                <h3>Data Science & Machine Learning</h3>
+                <p>TensorFlow, Keras, Power BI, Tableau, MATLAB</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- portfolio section design -->
+    <section class="portfolio" id="portfolio">
+        <h2 class="heading">Featured <span>Projects</span></h2>
+
+        <div class="portfolio-container">
+            <div class="portfolio-box">
+                <img src="images/portfolio1.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Deepfake Detection on Social Media</h4>
+                    <p>AI system to detect manipulated media content, enhancing security and trust online.</p>
+                    <a href="https://github.com/kishore422"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="images/portfolio2.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>eKart Application</h4>
+                    <p>An e-commerce platform with secure payment integration, developed with Spring Boot and Angular.</p>
+                    <a href="https://github.com/kishore422"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+            <div class="portfolio-box">
+                <img src="images/portfolio3.jpg" alt="">
+                <div class="portfolio-layer">
+                    <h4>Fruit Basket Inventory Management</h4>
+                    <p>A real-time inventory system for order tracking and stock management.</p>
+                    <a href="https://github.com/kishore422"><i class='bx bx-link-external'></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact section design -->
+    <section class="contact" id="contact">
+        <h2 class="heading">Contact <span>Me!</span></h2>
+
+        <form action="#">
+            <div class="input-box">
+                <input type="text" placeholder="Full Name">
+                <input type="email" placeholder="Email Address">
+            </div>
+            <div class="input-box">
+                <input type="number" placeholder="Mobile Number">
+                <input type="text" placeholder="Email Subject">
+            </div>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+            <input type="submit" value="Send Message" class="btn">
+        </form>
+    </section>
+
+    <!-- footer design -->
+    <footer class="footer">
+        <div class="footer-text">
+            <p>© 2023 Sai Kishore Bhadragiri | All Rights Reserved.</p>
+        </div>
+
+        <div class="footer-iconTop">
+            <a href="#home"><i class='bx bx-up-arrow-alt'></i></a>
+        </div>
+    </footer>
+
+    <!-- scroll reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!-- swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!-- custom js -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
