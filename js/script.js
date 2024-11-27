@@ -75,7 +75,40 @@ ScrollReveal({
     delay: 200
 });
 
+document.getElementById('contactForm').addEventListener('submit', function (e) {
+    e.preventDefault(); // Prevent default form submission
+
+    // Collect form data
+    const formData = new FormData(this);
+
+    // Use EmailJS to send the form data
+    emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', this)
+        .then(() => {
+            alert('Message sent successfully!');
+        })
+        .catch((error) => {
+            console.error('Failed to send message:', error);
+            alert('Failed to send message. Please try again later.');
+        });
+});
+
+
 ScrollReveal().reveal('.home-content, .heading', { origin: 'top' });
 ScrollReveal().reveal('.home-img img, .services-container, .portfolio-box, .testimonial-wrapper, .contact form', { origin: 'bottom' });
 ScrollReveal().reveal('.home-content h1, .about-img img', { origin: 'left' });
 ScrollReveal().reveal('.home-content h3, .home-content p, .about-content', { origin: 'right' });
+
+// Contact form submission handler
+document.getElementById('contactForm').addEventListener('submit', function (e) {
+    e.preventDefault(); // Prevent default form submission
+
+    // Use EmailJS to send the form data
+    emailjs.sendForm('service_4fxnafp', 'template_ebejqhl', this)
+        .then(() => {
+            alert('Message sent successfully!');
+        })
+        .catch((error) => {
+            console.error('Failed to send message:', error);
+            alert('Failed to send message. Please try again later.');
+        });
+});
