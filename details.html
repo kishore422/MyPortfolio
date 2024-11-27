@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Details</title>
+    <link rel="stylesheet" href="css/style.css"> <!-- Link to your existing CSS -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> <!-- Boxicons -->
+</head>
+<body>
+    <!-- Header -->
+    <header class="header large-header">
+        <a href="index.html" class="logo large-logo"> 📩 Back to Home</a>
+        <div class="bx bx-moon" id="darkMode-icon"></div>
+    </header>
+
+    <!-- Details Section -->
+    <section class="details">
+        <div class="container">
+            <h1 class="heading">More About <span>Me</span></h1>
+
+            <script>
+                const darkModeIcon = document.getElementById("darkMode-icon");
+            
+                // Toggle dark mode
+                darkModeIcon.addEventListener("click", () => {
+                    document.body.classList.toggle("dark-mode");
+                    localStorage.setItem("darkMode", document.body.classList.contains("dark-mode"));
+                });
+            
+                // Persist dark mode across sessions
+                if (localStorage.getItem("darkMode") === "true") {
+                    document.body.classList.add("dark-mode");
+                }
+            </script>
+            
+
+            <!-- Education -->
+            
+            <div class="section-box" style="background-image: url('images/education-bg.png');">
+                <h2 class="section-heading"><i class="bx bx-book"></i> Education</h2>
+                <div class="content">
+                    <div class="card">
+                        <h3>Masters in Computer Software Engineering</h3>
+                        <p>University of Houston | GPA: 3.7</p>
+                        <p>2023 – 2024</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Professional Experience -->
+            <div class="section-box" style="background-image: url('images/experience-bg.png');">
+                <h2 class="section-heading"><i class="bx bx-briefcase"></i> Professional Experience</h2>
+                <div class="content">
+                    <div class="card">
+                        <h3>Tech Support | System Administrator</h3>
+                        <p>University of Houston | Houston, Texas | 2023 – Present</p>
+                        <p>The University of Houston is a large public research university. In my role, I manage the IT systems, provide support to 
+                            students and staff, and ensure the university’s digital platforms run smoothly. I also handle system upgrades and 
+                            troubleshoot any technical issues. </p>
+                    </div>
+                    <div class="card">
+                        <h3>Systems Engineer | DevOps Engineer</h3>
+                        <p>Infosys Limited | Mysore, India | 2022 – 2023</p>
+                        <p>Infosys is a major player in the IT services industry. During my time there, I worked on a full-stack web application 
+                            project using Angular and React on the front end, and Java, Python, C, and SQL for the back end. I developed the 
+                            application from scratch to handle everything up to the payment system, utilizing Java full stack and tools like Selenium 
+                            for testing and automation. </p>
+                    </div>
+                    <div class="card">
+                        <h3>Project Engineer | Design Engineer</h3>
+                        <p>Wipro Limited | Bangalore, India | 2021 – 2022</p>
+                        <p>Wipro is a global IT and consulting company. I developed an e-commerce website from front-end to back-end using .NET 
+                            and other full-stack technologies. The project involved building the complete solution, including user interface design, 
+                            database management, and payment processing, ensuring a smooth user experience. </p>
+                    </div>
+                    <div class="card">
+                        <h3>Data Engineer | Analyst</h3>
+                        <p>Finiglobe Techno | Hyderabad, India | 2019 – 2021</p>
+                        <p>Finiglobe Techno is an IT consulting firm. As a data engineer and analyst, I built and managed data pipelines, designed 
+                            data warehouses, and used tools like Power BI to analyze and present insights. My role focused on helping the company 
+                            use data to identify trends, improve operations, and make informed decisions through data-driven analysis. </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Certifications -->
+            
+            <div class="section-box" style="background-image: url('images/certifications-bg.png');">
+                <h2 class="section-heading"><i class="bx bx-certification"></i> Certifications</h2>
+                <!-- <h2 class="section-heading"><i class="bx bx-certification"></i> Certified English Tests</h2> -->
+                
+                <div class="content">
+                    <ul>
+                        <ul class="certifications-list">
+
+                            <li><i class="bx bx-chat"></i> Microsoft Azure Solutions Architect Expert - linkedin</li>
+                            <li><i class="bx bx-slideshow"></i> Career Essentials in Software Development by Microsoft and LinkedIn</li>
+                            <li><i class="bx bx-shield-alt-2"></i> JavaFull Stack Development - StackRoute</li>
+                            <li><i class="bx bxl-python"></i> Programming with Python - Internshala</li>
+                            <li><i class="bx bx-receipt"></i> JavaScript Fundamentals - UDEMY</li>
+                            <li><i class="bx bx-cube-alt"></i> Automate the Boring Stuff with Python - UDEMY</li>
+                            <li><i class="bx bx-wifi-off"></i> Internet of Things (IoT) - Origin, ITsez Hub</li>
+                            <li><i class="bx bx-chip"></i> Switching Theory and Logic Design - NPTEL</li>
+                            <li><i class="bx bx-sort-z-a"></i> Mathematical Methods and its Applications - NPTEL</li>
+                        </ul>
+                    </ul>
+                </div>
+
+                
+            </div>
+
+            
+
+            <!-- Certified English Tests -->
+            <div class="section-box" style="background-image: url('images/por');">
+                <h2 class="section-heading"><i class="bx bx-test-tube"></i> Certified English Tests</h2>
+                <div class="content">
+                    <div class="card">
+                        <h3>IELTS</h3>
+                        <p>Score: 7.0</p>
+                        <p>Demonstrated proficiency in listening, reading, writing, and speaking.</p>
+                    </div>
+                    <div class="card">
+                        <h3>GRE</h3>
+                        <p>Score: 315</p>
+                        <p>Highlighted analytical writing, verbal reasoning, and quantitative skills.</p>
+                    </div>
+                    <div class="card">
+                        <h3>Duolingo</h3>
+                        <p>Score: 125</p>
+                        <p>Showcased advanced English proficiency in a modern and flexible format.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Honors and Contributions -->
+            <div class="section-box" style="background-image: url('images/Info_logo.svg.png');">
+                <h2 class="section-heading"><i class="bx bx-medal"></i> Honors and Contributions</h2>
+                <div class="content">
+                    <ul>
+                        <li>Published an IEEE paper for the project "Skin Cancer Detection".</li>
+                        <li>Developed personal projects with extensive Git repositories containing various files and project content.</li>
+                        <li>Discovered a critical bug in the UHCL PeopleSoft system; received Director appreciation and promotion.</li>
+                        <li>Received 5 offers from top IT companies even before completing my Bachelor’s.</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    
+        <!-- footer design -->
+        <footer class="footer">
+            <div class="footer-text">
+                <p>© 2023 Sai Kishore Bhadragiri | All Rights Reserved.</p>
+            </div>
+
+            <div class="footer-iconTop">
+                <a href="#about"><i class='bx bx-up-arrow-alt'></i></a>
+            </div>
+        </footer>
+</body>
+</html>
